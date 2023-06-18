@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "markmodule"
-version = "0.1.0"
+version = "0.2.0"
 description = "Import python code in markdown as module"
 authors = ["Matthew Martin <matthewdeanmartin@gmail.com>"]
 keywords = ["markdown",]

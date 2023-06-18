@@ -5,9 +5,9 @@ It would be a way to write instantly documented code.
 One draw back is that you need to write a .pyi file to get code completion in an IDE.
 
 ```python
-def some_function(args):
+def some_function(args: str) -> str:
     """This is a function that does something."""
-    return "Hello World"
+    return "Hello World" + args
 ```
 
 Here is another function
