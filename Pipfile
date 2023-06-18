@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 mistune = "<3"
+mypy = "*"
 
 [dev-packages]
 # alternate formatter
@@ -13,7 +14,6 @@ pytest = "*"
 vermin = "*"
 hypothesis = {extras = ["cli"], version = "*"}
 pre-commit = "*"
-mypy = "*"
 pylint = "*"
 
 pytest-cov = "*"
@@ -22,12 +22,12 @@ linkcheckmd = "*"
 tox = "*"
 scriv = "*"
 blacken-docs = "*"
-# flake8-markdown = "*"
+flake8-markdown = "*"
 # good pytest 7 required
 pytest-markdown-docs = "*"
 # good pytest 7 required
 pytest-codeblocks = "*"
-
+markdown-to-json = "*"
 
 [requires]
 python_version = "3.11"

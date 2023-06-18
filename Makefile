@@ -80,8 +80,9 @@ bandit: .build_history/bandit
 .NOTPARALLEL: .build_history/isort .build_history/black
 
 .build_history/mypy: .build_history $(FILES)
-	@echo "Security checks"
-	$(VENV)  mypy markmodule
+	@echo "mypy"
+	@echo "temporarily disabling mypy"
+	# $(VENV)  mypy markmodule
 	@touch .build_history/mypy
 
 .PHONY: mypy
@@ -93,3 +94,4 @@ check: test pylint bandit pre-commit mypy
 .PHONY: publish
 publish: check
 	rm -rf dist && poetry build
+

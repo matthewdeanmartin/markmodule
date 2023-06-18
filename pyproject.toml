@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "markmodule"
-version = "0.2.0"
+version = "0.3.0"
 description = "Import python code in markdown as module"
 authors = ["Matthew Martin <matthewdeanmartin@gmail.com>"]
 keywords = ["markdown",]
@@ -37,18 +37,12 @@ documentation ="https://github.com/matthewdeanmartin/markmodule"
 [tool.poetry.dependencies]
 # DOM parser
 mistune = "<3.0.0"
-# support more types to table
-tabulate = "*"
-# image/binary support
-pillow = "*"
+mypy = "*"
 # 3.8/3/9 support
 typing-extensions = { version = ">=4.0.0, <5.0", python = "<=3.9" }
 
 [tool.poetry.dev-dependencies]
-# alternate formatter
 mdformat = "*"
-#marko = "*"
-#mistletoe = "*"
 pytest = "*"
 vermin = "*"
 hypothesis = {extras = ["cli"], version = "*"}

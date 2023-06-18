@@ -23,13 +23,20 @@ def import_md(name: str) -> None:
 
 def import_markdown_string(string_value: str, module_name: str) -> None:
     """Import markdown as a string."""
-    parser = mistune.create_markdown(renderer="ast")
+    code_string = parse_code_out_of_markdown(string_value)
 
+    if not code_string:
+        raise TypeError("Can't find source code in markdown file")
+    import_code_string(code_string, module_name)
+
+
+def parse_code_out_of_markdown(string_value: str) -> str:
+    """Get python code out of markdown"""
+    parser = mistune.create_markdown(renderer="ast")
     if mistune.__version__.startswith("3"):
         result, _block_state = parser.parse(string_value)
     else:
         result = parser.parse(string_value)
-
     code_string = ""
     for token in result:
         if token["type"] == "blank_line":
@@ -44,10 +51,7 @@ def import_markdown_string(string_value: str, module_name: str) -> None:
         else:
             if token["type"] == "block_code" and token["info"] == "python":
                 code_string += token["text"]
-
-    if not code_string:
-        raise TypeError("Can't find source code in markdown file")
-    import_code_string(code_string, module_name)
+    return code_string
 
 
 def import_code_string(code_string: str, module_name: str) -> None:
