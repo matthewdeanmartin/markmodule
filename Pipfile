@@ -1,0 +1,33 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+mistune = "<3"
+
+[dev-packages]
+# alternate formatter
+mdformat = "*"
+pytest = "*"
+vermin = "*"
+hypothesis = {extras = ["cli"], version = "*"}
+pre-commit = "*"
+mypy = "*"
+pylint = "*"
+
+pytest-cov = "*"
+ruff = "*"
+linkcheckmd = "*"
+tox = "*"
+scriv = "*"
+blacken-docs = "*"
+# flake8-markdown = "*"
+# good pytest 7 required
+pytest-markdown-docs = "*"
+# good pytest 7 required
+pytest-codeblocks = "*"
+
+
+[requires]
+python_version = "3.11"
