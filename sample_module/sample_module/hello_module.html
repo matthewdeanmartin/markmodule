@@ -1,0 +1,17 @@
+<link rel='stylesheet' href='./style.css'>
+<h1>What if you could <code>import</code> a <code>markdown</code> file?</h1>
+<p>It would be a way to write instantly documented code.</p>
+<p>One draw back is that you need to write a .pyi file to get code completion in an IDE.</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">some_function</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;This is a function that does something.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="s2">&quot;Hello World&quot;</span>
+</pre></div>
+<p>Here is another function</p>
+<div class="highlight"><pre><span></span><span class="c1"># a lint issue for flake8 to find</span>
+<span class="n">O_o</span> <span class="o">=</span> <span class="s2">&quot;foo&quot;</span>
+
+
+<span class="k">def</span> <span class="nf">another_function</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Add them up.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</pre></div>

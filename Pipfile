@@ -15,7 +15,6 @@ vermin = "*"
 hypothesis = {extras = ["cli"], version = "*"}
 pre-commit = "*"
 pylint = "*"
-
 pytest-cov = "*"
 ruff = "*"
 linkcheckmd = "*"

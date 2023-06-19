@@ -1,0 +1,25 @@
+<link rel='stylesheet' href='./style.css'>
+<h1>How much can we code in python embedded in markdown?</h1>
+<h2>Build tools</h2>
+<ul>
+<li>See markmodule for start of <code>import foo</code> from foo.md</li>
+<li><a href="https://github.com/adamchainz/blacken-docs">blacken-docs</a> works.</li>
+<li><a href="https://github.com/johnfraney/flake8-markdown">flake8-markdown</a> works.</li>
+</ul>
+<h3>Four different ways to run tests</h3>
+<p>Good ones</p>
+<ul>
+<li><a href="https://github.com/modal-labs/pytest-markdown-docs">pytest-markdown-docs</a> Best at the moment for simple test runner.</li>
+<li><a href="https://pypi.org/project/pytest_codeblocks/">pytest_codeblocks</a></li>
+</ul>
+<p>Problematic ones (as of May 14, 2023)</p>
+<ul>
+<li><a href="https://github.com/Jc2k/pytest-markdown">pytest-markdown</a> is buggy (not pytest 7 compatible?)</li>
+<li><a href="https://github.com/mosquito/markdown-pytest">markdown-pytest</a> all python code blocks are &quot;tests&quot; and named with HTML comment.</li>
+<li><a href="https://github.com/axiros/pytest2md">pytest2md</a> quirky combination of test runner, test results generator, documenation generator.</li>
+<li><a href="https://pypi.org/project/pytest-markdoctest/">pytest-markdoctest</a> handles <em>doctests</em> in markdown. pypi packages are broken as of May 14, 2023. See my branch for a fix. Also, only compatible with pytest 6.2.5 (?)</li>
+</ul>
+<h2>Gaps</h2>
+<ul>
+<li>Not so much for a test runner that is maintained and just runs tests in markdown.</li>
+</ul>
