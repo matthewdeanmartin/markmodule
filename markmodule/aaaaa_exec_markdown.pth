@@ -1,0 +1,2 @@
+# src/aaaaa_exec_markdown.pth
+import sys; exec("""try:\n    import markmodule\nexcept ImportError:\n    pass\nelse:\n    markmodule.register()\n""")
