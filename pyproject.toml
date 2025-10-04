@@ -1,6 +1,6 @@
 [project]
 name = "markmodule"
-version = "0.3.0"
+version = "0.4.0"
 description = "Import python code in markdown as module"
 authors = [
     {name = "Matthew Martin", email = "matthewdeanmartin@gmail.com"},
@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.7,<4.0"
 keywords = ["markdown",]
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",

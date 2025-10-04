@@ -1,5 +1,16 @@
 # markmodule
+
 Import python from markdown files.
+
+[![tests](https://github.com/matthewdeanmartin/markmodule/actions/workflows/build.yml/badge.svg)
+](https://github.com/matthewdeanmartin/markmodule/actions/workflows/tests.yml)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/matthewdeanmartin/markmodule/main.svg)
+](https://results.pre-commit.ci/latest/github/matthewdeanmartin/markmodule/main)
+[![Downloads](https://img.shields.io/pypi/dm/markmodule)](https://pypistats.org/packages/markmodule)
+[![Python Version](https://img.shields.io/pypi/pyversions/markmodule)
+![Release](https://img.shields.io/pypi/v/markmodule)
+](https://pypi.org/project/markmodule/)
+
 
 ## Usage
 

@@ -90,8 +90,9 @@ def markdown_search(name: str) -> CodecInfo | None:
         # incrementaldecoder=codecs.BufferedIncrementalDecoder,
         # streamreader=utf_8.StreamReader,
         incrementaldecoder=IncrementalDecoder,
-        streamreader=StreamReader,
-        streamwriter=utf_8.StreamWriter,
+        # streamreader=StreamReader,
+        # streamreader=utf_8.StreamReader,
+        # streamwriter=utf_8.StreamWriter,
     )
 
 
