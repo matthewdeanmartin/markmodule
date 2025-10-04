@@ -54,6 +54,6 @@ The do-everything-with-markdown ecosystem is surprisingly robust.
 
 ## Documentation
 
-- [Contributing](https://github.com/matthewdeanmartin/markmoduel/blob/main/docs/contributing.md)
-- [TODO](https://github.com/matthewdeanmartin/markmoduel/blob/main/docs/TODO.md)
-- [Related StackOverflow Links](https://github.com/matthewdeanmartin/markmoduel/blob/main/docs/stackoverflow.md)
+- [Contributing](https://github.com/matthewdeanmartin/markmodule/blob/main/docs/contributing.md)
+- [TODO](https://github.com/matthewdeanmartin/markmodule/blob/main/docs/TODO.md)
+- [Related StackOverflow Links](https://github.com/matthewdeanmartin/markmodule/blob/main/docs/stackoverflow.md)
