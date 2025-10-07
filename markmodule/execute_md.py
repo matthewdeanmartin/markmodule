@@ -101,4 +101,4 @@ def register():
 
 
 if __name__ == "__main__":
-    print(decode("```python\nprint('hello')\n```\n# hello ```\n\n```python\nprint('hello')\n```".encode()))
+    print(decode(b"```python\nprint('hello')\n```\n# hello ```\n\n```python\nprint('hello')\n```"))

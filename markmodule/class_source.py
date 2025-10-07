@@ -1,6 +1,7 @@
 """
 Get Class source for de/serialization
 """
+
 import inspect
 from typing import Any
 
