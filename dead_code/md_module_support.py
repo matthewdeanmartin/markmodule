@@ -1,6 +1,7 @@
 """
 Machinery for running import foo and getting foo.md to import
 """
+
 import importlib.abc
 import os.path
 from importlib.abc import MetaPathFinder

@@ -6,6 +6,7 @@ Usage:
 with open("testmodule.py", "r") as module:
     load_from_string(module.read(), "testmodule")
 """
+
 import importlib.abc
 import importlib.util
 import sys

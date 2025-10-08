@@ -1,6 +1,7 @@
 """
 Generate .pyi file for .md if it doesn't exist by shelling out to mypy
 """
+
 import hashlib
 import os
 import subprocess
