@@ -12,6 +12,12 @@ Import python from markdown files.
 ](https://pypi.org/project/markmodule/)
 
 
+## Archived
+
+This is more of a novelty than anything. Markdown is a middle area between jupyter notebooks and .py files.
+
+Maybe I'll unarchive it again someday if I get interested in that sort of "literate" programming again.
+
 ## Usage
 
 In a file named `hello_module.md` define a function. I'm escaping the fence, use a real three-tick fence.
