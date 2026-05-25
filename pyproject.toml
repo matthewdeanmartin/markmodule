@@ -170,3 +170,6 @@ strict = true
 [[tool.mypy.overrides]]
 module = ["mistune.*"]
 ignore_missing_imports = true
+
+[tool.uv]
+universal = true
