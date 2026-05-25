@@ -19,7 +19,6 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
-    "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
 ]
 dependencies = [
@@ -33,7 +32,12 @@ dependencies = [
 
 
 [dependency-groups]
-dev = ["mdformat", "pytest", "vermin", "hypothesis[cli]", "pre-commit", "mypy"]
+dev = [
+    "jiggle-version>=2.1.0; python_version >= '3.8'",
+    "troml-dev-status>=0.6.0; python_version >= '3.9'",
+    "dont-be-lazy>=0.1.2; python_version >= '3.10'",
+    "pydoc-fork>=3.0.0; python_version >= '3.10'",
+"mdformat", "pytest", "vermin", "hypothesis[cli]", "pre-commit", "mypy"]
 
 [tool.black]
 line-length = 120
