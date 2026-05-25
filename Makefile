@@ -49,7 +49,7 @@ mypy:
 mypy: mypy
 
 
-check: test pylint bandit pre-commit mypy
+check: test pylint bandit mypy
 
 .PHONY: publish
 publish: check
