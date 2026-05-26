@@ -9,8 +9,8 @@ import importlib.abc
 import importlib.util
 import os
 import sys
-from modulefinder import Module
-from typing import Optional
+import types
+from typing import Optional, Sequence
 
 from markmodule.import_string import parse_code_out_of_markdown
 
@@ -29,12 +29,12 @@ class MdImporter(importlib.abc.SourceLoader):
         return None
 
     # pylint: disable=unused-argument
-    def get_data(self, path: str) -> None:
+    def get_data(self, path: str) -> bytes:
         """For returning byte code... I think. Not implemented"""
-        return None
+        return b""
 
     # pylint: disable=unused-argument
-    def exec_module(self, module: Module) -> None:
+    def exec_module(self, module: types.ModuleType) -> None:
         """Execute code and load up as a module"""
         with open(self.path, encoding="utf-8") as file:
             markdown = file.read()
@@ -48,7 +48,7 @@ class MdImporter(importlib.abc.SourceLoader):
         return self.path
 
     # pylint: disable=unused-argument
-    def get_source(self, fullname: str) -> str:
+    def get_source(self, fullname: str) -> Optional[str]:
         """Source for debuggers"""
         return self.code
 
@@ -57,7 +57,7 @@ class MdFinder(importlib.abc.MetaPathFinder):
     """Allow for import syntax to work."""
 
     # pylint: disable=unused-argument
-    def find_spec(self, fullname: str, path: str, target: Optional[str] = None):
+    def find_spec(self, fullname: str, path: Optional[Sequence[str]], target: Optional[types.ModuleType] = None):
         """Find a markdown file and load it as a module"""
         md_path = fullname.replace(".", "/") + ".md"
         for sys_path in sys.path:

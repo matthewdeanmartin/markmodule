@@ -33,6 +33,10 @@ def load_from_string(code: str, module_name: str) -> None:
     """Helper for StringLoader"""
     loader = StringLoader(code)
     spec = importlib.util.spec_from_loader(module_name, loader, origin="built-in")
+    if spec is None:
+        raise ImportError(f"Could not create spec for module {module_name!r}")
     module = importlib.util.module_from_spec(spec)
     sys.modules[module_name] = module
+    if spec.loader is None:
+        raise ImportError(f"spec has no loader for module {module_name!r}")
     spec.loader.exec_module(module)

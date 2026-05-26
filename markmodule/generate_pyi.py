@@ -52,7 +52,7 @@ def generate_side_by_side_pyi(module_name: str) -> None:
             writer.write(generate_pyi_from_code(code))
 
 
-def generate_pyi_from_code(code_string: str) -> Optional[str]:
+def generate_pyi_from_code(code_string: str) -> str:
     """Generates pyi contents give source code"""
     # Create a temporary directory to hold the code file and generated .pyi stub
     with tempfile.TemporaryDirectory() as temp_dir:

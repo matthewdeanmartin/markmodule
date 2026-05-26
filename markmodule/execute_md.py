@@ -18,7 +18,7 @@ def decode(input_bytes, errors="strict"):
 
     inside = False
     blocks = []
-    current = []
+    current: list[str] = []
 
     for line in lines:
         if not inside:
