@@ -74,3 +74,10 @@ The do-everything-with-markdown ecosystem is surprisingly robust.
 - [Contributing](https://github.com/matthewdeanmartin/markmodule/blob/main/docs/contributing.md)
 - [TODO](https://github.com/matthewdeanmartin/markmodule/blob/main/docs/TODO.md)
 - [Related StackOverflow Links](https://github.com/matthewdeanmartin/markmodule/blob/main/docs/stackoverflow.md)
+
+## Project Links
+
+- [GitHub](https://github.com/matthewdeanmartin/markmodule)
+- [PyPI](https://pypi.org/project/markmodule/)
+- [Bug Tracker](https://github.com/matthewdeanmartin/markmodule/issues)
+- [Change Log](https://github.com/matthewdeanmartin/markmodule/blob/main/CHANGELOG.md)

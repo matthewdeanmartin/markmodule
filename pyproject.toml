@@ -28,7 +28,7 @@ dependencies = [
 
 [project.urls]
 "Bug Tracker" = "https://github.com/matthewdeanmartin/markmodule/issues"
-"Change Log" = "https://github.com/matthewdeanmartin/markmodule/blob/main/CHANGES.md"
+"Change Log" = "https://github.com/matthewdeanmartin/markmodule/blob/main/CHANGELOG.md"
 
 
 [dependency-groups]
